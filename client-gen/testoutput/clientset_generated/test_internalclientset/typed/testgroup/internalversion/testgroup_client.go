@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package unversioned
+package internalversion
 
 import (
 	api "k8s.io/kubernetes/pkg/api"
@@ -27,7 +27,7 @@ type TestgroupInterface interface {
 	TestTypesGetter
 }
 
-// TestgroupClient is used to interact with features provided by the Testgroup group.
+// TestgroupClient is used to interact with features provided by the k8s.io/kubernetes/pkg/apimachinery/registered.Group group.
 type TestgroupClient struct {
 	restClient restclient.Interface
 }

@@ -1,5 +1,5 @@
 /*
-Copyright 2015 The Kubernetes Authors.
+Copyright 2016 The Kubernetes Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,5 +14,19 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// +groupName=testgroup.k8s.io
-package testgroup // import "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/test_apis/testgroup.k8s.io"
+package types
+
+import (
+	"reflect"
+	"sort"
+	"testing"
+)
+
+func TestVersionSort(t *testing.T) {
+	unsortedVersions := []string{"v4beta1", "v2beta1", "v2alpha1", "v3", "v1"}
+	expected := []string{"v2alpha1", "v2beta1", "v4beta1", "v1", "v3"}
+	sort.Sort(sortableSliceOfVersions(unsortedVersions))
+	if !reflect.DeepEqual(unsortedVersions, expected) {
+		t.Errorf("expected %#v\ngot %#v", expected, unsortedVersions)
+	}
+}

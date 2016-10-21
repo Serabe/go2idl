@@ -12,7 +12,18 @@ load(
 
 go_library(
     name = "go_default_library",
-    srcs = ["normalization.go"],
+    srcs = [
+        "helpers.go",
+        "types.go",
+    ],
     tags = ["automanaged"],
-    deps = ["//pkg/api/unversioned:go_default_library"],
+    deps = ["//vendor:k8s.io/gengo/namer"],
+)
+
+go_test(
+    name = "go_default_test",
+    srcs = ["helpers_test.go"],
+    library = "go_default_library",
+    tags = ["automanaged"],
+    deps = [],
 )

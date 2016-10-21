@@ -17,7 +17,7 @@ limitations under the License.
 package fake
 
 import (
-	unversioned "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/testoutput/clientset_generated/test_internalclientset/typed/testgroup.k8s.io/unversioned"
+	internalversion "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/testoutput/clientset_generated/test_internalclientset/typed/testgroup/internalversion"
 	restclient "k8s.io/kubernetes/pkg/client/restclient"
 	core "k8s.io/kubernetes/pkg/client/testing/core"
 )
@@ -26,7 +26,7 @@ type FakeTestgroup struct {
 	*core.Fake
 }
 
-func (c *FakeTestgroup) TestTypes(namespace string) unversioned.TestTypeInterface {
+func (c *FakeTestgroup) TestTypes(namespace string) internalversion.TestTypeInterface {
 	return &FakeTestTypes{c, namespace}
 }
 
