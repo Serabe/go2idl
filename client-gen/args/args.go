@@ -16,7 +16,7 @@ limitations under the License.
 
 package args
 
-import "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/types"
+import "srcd.works/go2idl.v0/client-gen/types"
 
 // ClientGenArgs is a wrapper for arguments to client-gen.
 type Args struct {

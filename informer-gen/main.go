@@ -20,7 +20,7 @@ import (
 	"path/filepath"
 
 	"k8s.io/gengo/args"
-	"k8s.io/kubernetes/cmd/libs/go2idl/informer-gen/generators"
+	"srcd.works/go2idl.v0/informer-gen/generators"
 
 	"github.com/golang/glog"
 	"github.com/spf13/pflag"

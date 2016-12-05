@@ -18,7 +18,7 @@ package test_internalclientset
 
 import (
 	"github.com/golang/glog"
-	internalversiontestgroup "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/testoutput/clientset_generated/test_internalclientset/typed/testgroup/internalversion"
+	internalversiontestgroup "srcd.works/go2idl.v0/client-gen/testoutput/clientset_generated/test_internalclientset/typed/testgroup/internalversion"
 	restclient "k8s.io/kubernetes/pkg/client/restclient"
 	discovery "k8s.io/kubernetes/pkg/client/typed/discovery"
 	"k8s.io/kubernetes/pkg/util/flowcontrol"

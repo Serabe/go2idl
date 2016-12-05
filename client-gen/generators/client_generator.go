@@ -26,9 +26,9 @@ import (
 	"k8s.io/gengo/generator"
 	"k8s.io/gengo/namer"
 	"k8s.io/gengo/types"
-	clientgenargs "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/args"
-	"k8s.io/kubernetes/cmd/libs/go2idl/client-gen/generators/fake"
-	clientgentypes "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/types"
+	clientgenargs "srcd.works/go2idl.v0/client-gen/args"
+	"srcd.works/go2idl.v0/client-gen/generators/fake"
+	clientgentypes "srcd.works/go2idl.v0/client-gen/types"
 
 	"github.com/golang/glog"
 )

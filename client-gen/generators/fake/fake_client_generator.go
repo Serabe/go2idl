@@ -24,8 +24,8 @@ import (
 
 	"k8s.io/gengo/generator"
 	"k8s.io/gengo/types"
-	clientgenargs "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/args"
-	clientgentypes "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/types"
+	clientgenargs "srcd.works/go2idl.v0/client-gen/args"
+	clientgentypes "srcd.works/go2idl.v0/client-gen/types"
 )
 
 func PackageForGroup(gv clientgentypes.GroupVersion, typeList []*types.Type, packageBasePath string, srcTreePath string, inputPath string, boilerplate []byte, generatedBy string) generator.Package {

@@ -17,7 +17,7 @@ limitations under the License.
 package internalversion
 
 import (
-	testgroup "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/test_apis/testgroup"
+	testgroup "srcd.works/go2idl.v0/client-gen/test_apis/testgroup"
 	api "k8s.io/kubernetes/pkg/api"
 	restclient "k8s.io/kubernetes/pkg/client/restclient"
 	watch "k8s.io/kubernetes/pkg/watch"

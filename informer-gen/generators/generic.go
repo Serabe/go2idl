@@ -24,7 +24,7 @@ import (
 	"k8s.io/gengo/generator"
 	"k8s.io/gengo/namer"
 	"k8s.io/gengo/types"
-	clientgentypes "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/types"
+	clientgentypes "srcd.works/go2idl.v0/client-gen/types"
 )
 
 // genericGenerator generates the generic informer.

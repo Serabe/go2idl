@@ -23,8 +23,8 @@ import (
 
 	"github.com/golang/glog"
 
-	"k8s.io/kubernetes/cmd/libs/go2idl/client-gen/test_apis/testgroup"
-	"k8s.io/kubernetes/cmd/libs/go2idl/client-gen/test_apis/testgroup/v1"
+	"srcd.works/go2idl.v0/client-gen/test_apis/testgroup"
+	"srcd.works/go2idl.v0/client-gen/test_apis/testgroup/v1"
 	"k8s.io/kubernetes/pkg/api"
 	"k8s.io/kubernetes/pkg/api/meta"
 	"k8s.io/kubernetes/pkg/apimachinery"
@@ -34,7 +34,7 @@ import (
 	"k8s.io/kubernetes/pkg/util/sets"
 )
 
-const importPrefix = "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/test_apis/testgroup"
+const importPrefix = "srcd.works/go2idl.v0/client-gen/test_apis/testgroup"
 
 var accessor = meta.NewAccessor()
 

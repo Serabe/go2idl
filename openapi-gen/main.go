@@ -23,7 +23,7 @@ import (
 	"path/filepath"
 
 	"k8s.io/gengo/args"
-	"k8s.io/kubernetes/cmd/libs/go2idl/openapi-gen/generators"
+	"srcd.works/go2idl.v0/openapi-gen/generators"
 
 	"github.com/golang/glog"
 )

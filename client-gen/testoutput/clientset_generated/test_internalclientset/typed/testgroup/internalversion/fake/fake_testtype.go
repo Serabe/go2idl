@@ -17,7 +17,7 @@ limitations under the License.
 package fake
 
 import (
-	testgroup "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/test_apis/testgroup"
+	testgroup "srcd.works/go2idl.v0/client-gen/test_apis/testgroup"
 	api "k8s.io/kubernetes/pkg/api"
 	core "k8s.io/kubernetes/pkg/client/testing/core"
 	labels "k8s.io/kubernetes/pkg/labels"

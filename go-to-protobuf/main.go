@@ -19,7 +19,7 @@ limitations under the License.
 package main
 
 import (
-	"k8s.io/kubernetes/cmd/libs/go2idl/go-to-protobuf/protobuf"
+	"srcd.works/go2idl.v0/go-to-protobuf/protobuf"
 
 	flag "github.com/spf13/pflag"
 )

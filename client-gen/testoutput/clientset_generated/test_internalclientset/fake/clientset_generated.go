@@ -17,9 +17,9 @@ limitations under the License.
 package fake
 
 import (
-	clientset "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/testoutput/clientset_generated/test_internalclientset"
-	internalversiontestgroup "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/testoutput/clientset_generated/test_internalclientset/typed/testgroup/internalversion"
-	fakeinternalversiontestgroup "k8s.io/kubernetes/cmd/libs/go2idl/client-gen/testoutput/clientset_generated/test_internalclientset/typed/testgroup/internalversion/fake"
+	clientset "srcd.works/go2idl.v0/client-gen/testoutput/clientset_generated/test_internalclientset"
+	internalversiontestgroup "srcd.works/go2idl.v0/client-gen/testoutput/clientset_generated/test_internalclientset/typed/testgroup/internalversion"
+	fakeinternalversiontestgroup "srcd.works/go2idl.v0/client-gen/testoutput/clientset_generated/test_internalclientset/typed/testgroup/internalversion/fake"
 	"k8s.io/kubernetes/pkg/api"
 	"k8s.io/kubernetes/pkg/apimachinery/registered"
 	"k8s.io/kubernetes/pkg/client/testing/core"

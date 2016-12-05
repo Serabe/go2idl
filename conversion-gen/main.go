@@ -38,7 +38,7 @@ import (
 	"path/filepath"
 
 	"k8s.io/gengo/args"
-	"k8s.io/kubernetes/cmd/libs/go2idl/conversion-gen/generators"
+	"srcd.works/go2idl.v0/conversion-gen/generators"
 
 	"github.com/golang/glog"
 	"github.com/spf13/pflag"
